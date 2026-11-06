@@ -5,7 +5,7 @@ Buttons
   *meechGacha
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
-    on click:yield 1 meech
+    on click:get meech
 
 Resources
   *meech
