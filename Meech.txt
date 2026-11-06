@@ -14,4 +14,3 @@ Buildings
     name: Meech Gacha
     desc: Pull and pray.
     cost: 0 coins
-    on tick:give 1 meech
