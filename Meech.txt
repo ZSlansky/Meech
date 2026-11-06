@@ -24,3 +24,11 @@ Buildings
     desc:A meech to pull the gacha for you.
     on tick:get .1 meech
     cost:10 meech
+
+Upgrades
+  *gachaMeechUp1
+    name:Meechagers
+    desc:Meechagers to manage your Gacha Meechers, doubling production.
+    passive:multiply yield of gachaMeech by 2
+    cost:100 meech
+    req:gachaMeech > 9
