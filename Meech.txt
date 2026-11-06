@@ -35,4 +35,4 @@ Upgrades
   *pony
     name:Defeat the pony
     desc:Unleash the full power of an immense Meech Army and defeat 1 pony to beat the game.
-    cost:1000000000000000000000000000000000000000000000000000 meech
+    cost:10*10 meech
