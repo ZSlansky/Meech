@@ -1,16 +1,20 @@
 Let's make a game!
   name:Meech Clicker
 
-Resources
-  *meech
-    name:Meech
-    desc:The foundation of your army.
-
-Settings
-  background:https://static.toiimg.com/thumb/msid-99612775,width-400,resizemode-4/99612775.jpg
-
 Buttons
   *meechGacha
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
     on click:yield 1 meech
+
+Resources
+  *meech
+    name:Meech
+    desc:The foundation of your army.
+    class:noBackground
+    show earned
+
+Settings
+  background:https://static.toiimg.com/thumb/msid-99612775,width-400,resizemode-4/99612775.jpg
+
+
