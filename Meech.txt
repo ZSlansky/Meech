@@ -1,0 +1,14 @@
+Let's make a game!
+  name: Meech Clicker
+
+Resources
+  *meech
+    name: Meech
+    desc: The foundation of your army.
+
+Buildings
+  *meechGacha
+    name: Meech Gacha
+    desc: Pull and pray.
+    cost: 0 coins
+    on tick:give 1 meech
