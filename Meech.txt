@@ -6,6 +6,9 @@ Resources
     name: Meech
     desc: The foundation of your army.
 
+Settings
+  background:https://static.toiimg.com/thumb/msid-99612775,width-400,resizemode-4/99612775.jpg
+
 Buildings
   *meechGacha
     name: Meech Gacha
