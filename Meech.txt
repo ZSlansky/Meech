@@ -18,7 +18,6 @@ Buttons
         toast You need more Meech Money.
       end
     end
-    on click:if (chance(10%)) get 1 beepameech
     
 Resources
   *meechMoney
