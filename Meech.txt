@@ -5,14 +5,14 @@ Buttons
   *meechMine
     name:Meech Mine
     desc:Work the mines for Meech Money.
-    on click:get meechMoney
+    on click:get 1 meechMoney
   *meechGacha
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
     req:10 meechMoney
     on click: 
       if (meechMoney > 9) 
-        get meech
+        get 1 meech
         get -10 meechMoney
       else
         toast You need more Meech Money.
@@ -23,7 +23,8 @@ Buttons
 Resources
   *meechMoney
     name:Meech Money
-  
+    desc:Used to buy things.
+    show earned
 
 Settings
   background:https://static.toiimg.com/thumb/msid-99612775,width-400,resizemode-4/99612775.jpg
