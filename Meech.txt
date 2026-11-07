@@ -6,7 +6,7 @@ Buttons
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
     on click:get meech
-    on click: if (chance(10%)) yield 1 beepameech
+    on click:if (chance(10%)) yield 1 beepameech
 
 Resources
   *meech
