@@ -10,8 +10,14 @@ Buttons
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
     req:10 meechMoney
-    on click:get meech
-    on click:get -10 meechMoney
+    on click: 
+      if (meechMoney > 9) 
+        get meech
+        get -10 meechMoney
+      else
+        toast You need more Meech Money.
+      end
+    end
     on click:if (chance(10%)) get 1 beepameech
     
 Resources
