@@ -2,40 +2,38 @@ Let's make a game!
   name:Meech Clicker
 
 Buttons
+  *meechMine
+    name: Meech Mine
+    desc: Work the mines for Meech Money.
+    on click: get meechMoney
   *meechGacha
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
+    req:10 meechMoney
     on click:get meech
+    on click: get -10 meechMoney
     on click:if (chance(10%)) get 1 beepameech
     
 Resources
-  *meech
-    name:Meech
-    desc:The foundation of your army.
-    class:noBackground
-    show earned
-  *beepameech
-    name: Beep A Meech
-    desc:The beepiest meech.
-    hidden when 0
-    show earned
+  *meechMoney
+    name:Meech Money
+  
 
 Settings
   background:https://static.toiimg.com/thumb/msid-99612775,width-400,resizemode-4/99612775.jpg
   building cost increase:110%
 
 Buildings
-  *gachaMeech
-    name:Gacha Meech
-    desc:A meech to pull the gacha for you.
-    on tick:get .1 meech
-    cost:10 meech
+  *meech
+    name:Meech
+    desc:The default meech.
+    on tick: get .1 meechMoney
 
 Upgrades
   *meechagers
     name:Meechagers
-    desc:Meechagers to manage your Gacha Meech, doubling production.
-    passive:multiply yield of gachaMeech by 2
+    desc:Meechagers to manage your Default Meech, doubling production.
+    passive:multiply yield of meech by 2
     cost:100 meech
     req:gachaMeech > 9
   *pony
