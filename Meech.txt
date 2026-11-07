@@ -3,8 +3,8 @@ Let's make a game!
 
 Buttons
   *meechMine
-    name: Meech Mine
-    desc: Work the mines for Meech Money.
+    name:Meech Mine
+    desc:Work the mines for Meech Money.
     on click:get meechMoney
   *meechGacha
     name:Pull Meech Gacha 
@@ -33,7 +33,7 @@ Buildings
   *meech
     name:Meech
     desc:The default meech.
-    on tick: get .1 meechMoney
+    on tick:get .1 meechMoney
 
 Upgrades
   *meechagers
