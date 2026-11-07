@@ -16,7 +16,7 @@ Resources
     show earned
   *beepameech
     name: Beep A Meech
-    desc:The beefiest meech.
+    desc:The beepiest meech.
     hidden when 0
     show earned
 
