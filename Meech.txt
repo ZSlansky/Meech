@@ -6,12 +6,18 @@ Buttons
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
     on click:get meech
+    on click: if (chance(10%)) yield 1 beepameech
 
 Resources
   *meech
     name:Meech
     desc:The foundation of your army.
     class:noBackground
+    show earned
+  *beepameech
+    name: Beep A Meech
+    desc:The beefiest meech.
+    hidden when 0
     show earned
 
 Settings
