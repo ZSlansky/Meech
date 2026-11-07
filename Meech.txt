@@ -9,6 +9,8 @@ Buttons
     on click:
       if (chance(10%)) 
         yield 1 beepameech
+      else
+        yield 1 meech
       end
 
 Resources
