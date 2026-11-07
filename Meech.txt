@@ -5,13 +5,13 @@ Buttons
   *meechMine
     name: Meech Mine
     desc: Work the mines for Meech Money.
-    on click: get meechMoney
+    on click:get meechMoney
   *meechGacha
     name:Pull Meech Gacha 
     desc:Click to pull a Meech.
     req:10 meechMoney
     on click:get meech
-    on click: get -10 meechMoney
+    on click:get -10 meechMoney
     on click:if (chance(10%)) get 1 beepameech
     
 Resources
