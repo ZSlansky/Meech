@@ -12,6 +12,7 @@ Buttons
       else
         yield 1 meech
       end
+    end
 
 Resources
   *meech
