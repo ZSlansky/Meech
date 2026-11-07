@@ -41,7 +41,7 @@ Upgrades
     desc:Meechagers to manage your Default Meech, doubling production.
     passive:multiply yield of meech by 2
     cost:100 meech
-    req:gachaMeech > 9
+    req:meech > 9
   *pony
     name:Defeat the pony
     desc:Unleash the full power of an immense Meech Army and defeat 1 pony to beat the game.
