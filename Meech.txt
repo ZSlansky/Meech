@@ -21,8 +21,10 @@ Buttons
           else
             lose 100 meechMoney
           end
+          gain 10 meech
         else
           lose 10 meechMoney
+          gain 1 meech
         end
       else
         toast You need more Meech Money.
