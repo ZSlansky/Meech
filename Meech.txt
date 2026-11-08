@@ -9,7 +9,7 @@ Buttons
     name:Meech Mine
     desc:Work the mines for Meech Money.
     on click:get 1 meechMoney
-      if meechMoney:max > 0
+      if ((meechMoney:max)>0)
         show meechGacha
       end
     end
