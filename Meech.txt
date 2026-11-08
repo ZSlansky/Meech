@@ -21,7 +21,7 @@ Buttons
     hidden
     on click: 
       if (meechMoney > 9) 
-        if ((have tenpull) and (meechMoney>=100))
+        if ((have tenpull) and (meechMoney>=90))
           if (have tpdiscount)
             lose 90 meechMoney
           else
