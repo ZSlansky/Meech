@@ -10,7 +10,7 @@ Buttons
     desc:Work the mines for Meech Money.
     on click:
       get 1 meechMoney
-      if ((meechMoney:max)>0)
+      if ((meechMoney:max)>5)
         show meechGacha
       end
     end
@@ -19,6 +19,7 @@ Buttons
     name:Pull Meech Gacha 
     desc:Click to pull a Meech. Costs 10 Meech Money.
     hidden
+    cost: 10 meechMoney
     on click: 
       if (meechMoney > 9) 
         if ((have tenpull) and (meechMoney>=90))
