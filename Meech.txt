@@ -1,6 +1,9 @@
 Let's make a game!
   name:Meech Clicker
 
+Includes
+  *include 
+
 Buttons
   *meechMine
     name:Meech Mine
@@ -8,12 +11,16 @@ Buttons
     on click:get 1 meechMoney
   *meechGacha
     name:Pull Meech Gacha 
-    desc:Click to pull a Meech.
+    desc:Click to pull a Meech. Costs 10 Meech Money.
     req:10 meechMoney
     on click: 
       if (meechMoney > 9) 
         get 1 meech
-        get -10 meechMoney
+        if (have tenpull)
+          lose 9 meechMoney
+        else
+          lose 10 meechMoney
+        end
       else
         toast You need more Meech Money.
       end
@@ -42,7 +49,16 @@ Upgrades
     passive:multiply yield of meech by 2
     cost:100 meech
     req:meech > 9
+  *tenpull
+    name: Ten Pull
+    desc:Pull 10 meeches from the Gacha at once! Perfect for impatient meech. 
+    
   *pony
     name:Defeat the pony
     desc:Unleash the full power of an immense Meech Army and defeat 1 pony to beat the game.
     cost:1e+308 meech
+
+Achievements
+  *meech1
+    name: Your first meech.
+    desc: You pulled a Default Meech!
