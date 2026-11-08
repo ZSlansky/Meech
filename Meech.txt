@@ -53,7 +53,7 @@ Buildings
     name:Meech
     desc:The default meech.
     on tick:get .1 meechMoney
-    nobuy
+    no buy
 
 Upgrades
   *meechagers
