@@ -61,6 +61,7 @@ Upgrades
     name: Ten Pull Discount
     desc: Pulling 10 meech at once costs 10% less.
     cost: 1000 meechMoney
+    req:tenpull
   *pony
     name:Defeat the pony
     desc:Unleash the full power of an immense Meech Army and defeat 1 pony to beat the game.
