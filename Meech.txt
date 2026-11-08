@@ -53,6 +53,7 @@ Buildings
     name:Meech
     desc:The default meech.
     on tick:get .1 meechMoney
+    nobuy
 
 Upgrades
   *meechagers
@@ -80,3 +81,4 @@ Achievements
   *meech1
     name: Your first meech.
     desc: You pulled a Default Meech!
+    req:1 meech
