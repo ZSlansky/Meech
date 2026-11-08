@@ -15,9 +15,12 @@ Buttons
     req:10 meechMoney
     on click: 
       if (meechMoney > 9) 
-        get 1 meech
-        if (have tenpull)
-          lose 9 meechMoney
+        if ((have tenpull) and (meechMoney>=100))
+          if (have tpdiscount)
+            lose 90 meechMoney
+          else
+            lose 100 meechMoney
+          end
         else
           lose 10 meechMoney
         end
@@ -47,12 +50,17 @@ Upgrades
     name:Meechagers
     desc:Meechagers to manage your Default Meech, doubling production.
     passive:multiply yield of meech by 2
-    cost:100 meech
+    cost:10000 meechMoney
     req:meech > 9
   *tenpull
     name: Ten Pull
-    desc:Pull 10 meeches from the Gacha at once! Perfect for impatient meech. 
-    
+    desc:Pull 10 meeches from the Gacha at once! Perfect for an impatient meech. 
+    req:10 meechMoney
+    cost:100 meechMoney
+  *tpdiscount
+    name: Ten Pull Discount
+    desc: Pulling 10 meech at once costs 10% less.
+    cost: 1000 meechMoney
   *pony
     name:Defeat the pony
     desc:Unleash the full power of an immense Meech Army and defeat 1 pony to beat the game.
